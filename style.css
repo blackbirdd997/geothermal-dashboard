@@ -92,3 +92,34 @@ h1 {
     border-radius: 10px;
     margin-top: 1rem;
 }
+
+.disclaimer {
+    background: rgba(255, 255, 255, 0.15);
+    border-left: 4px solid #ffd700;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    margin: 2rem 0;
+    font-size: 0.9rem;
+    backdrop-filter: blur(10px);
+}
+
+.disclaimer p {
+    margin: 0;
+    opacity: 0.95;
+}
+
+.stat-detail {
+    font-size: 0.85rem;
+    opacity: 0.7;
+    margin-top: 0.5rem;
+}
+
+.stat-card.highlight {
+    background: rgba(255, 215, 0, 0.2);
+    border: 2px solid rgba(255, 215, 0, 0.5);
+}
+
+.stat-card.highlight .stat-number {
+    font-size: 3.5rem;
+    text-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+}
