@@ -1,43 +1,56 @@
 <!DOCTYPE html>
-<html lang="hr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Geotermalna Energija - Dashboard</title>
+    <title>Geothermal Energy - Dashboard</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 </head>
 <body>
-    <body>
-        <div class="container">
-            <h1>Geotermalni Dashboard</h1>
-            <p class="subtitle">Proizvodnja geotermalne energije u realnom vremenu</p>
+    <div class="container">
+        <h1>Geothermal Dashboard</h1>
+        <p class="subtitle">Geothermal energy production in real time</p>
+        
+        <div class="stats-grid">
+            <div class="stat-card">
+                <h3>Current Production</h3>
+                <p class="stat-number">2,450 MW</p>
+                <p class="stat-label">Megawatts</p>
+            </div>
             
-            <div class="stats-grid">
-                <div class="stat-card">
-                    <h3>Trenutna Proizvodnja</h3>
-                    <p class="stat-number">2,450 MW</p>
-                    <p class="stat-label">Megavata</p>
-                </div>
-                
-                <div class="stat-card">
-                    <h3>Ukupno Elektrana</h3>
-                    <p class="stat-number">127</p>
-                    <p class="stat-label">Aktivnih postrojenja</p>
-                </div>
-                
-                <div class="stat-card">
-                    <h3>Globalna Pokrivenost</h3>
-                    <p class="stat-number">16.8%</p>
-                    <p class="stat-label">Obnovljive energije</p>
-                </div>
-                
-                <div class="stat-card">
-                    <h3>CO₂ Ušteđeno</h3>
-                    <p class="stat-number">18.2M</p>
-                    <p class="stat-label">Tona godišnje</p>
-                </div>
+            <div class="stat-card">
+                <h3>Total Power Plants</h3>
+                <p class="stat-number">127</p>
+                <p class="stat-label">Active facilities</p>
+            </div>
+            
+            <div class="stat-card">
+                <h3>Global Coverage</h3>
+                <p class="stat-number">16.8%</p>
+                <p class="stat-label">Renewable energy</p>
+            </div>
+            
+            <div class="stat-card">
+                <h3>CO₂ Saved</h3>
+                <p class="stat-number">18.2M</p>
+                <p class="stat-label">Tons per year</p>
             </div>
         </div>
-    </body>
+
+        <div class="chart-container">
+            <h2>Production Over Time</h2>
+            <canvas id="productionChart"></canvas>
+        </div>
+
+        <div class="chart-container">
+            <h2>Geothermal Power Plant Locations in Europe</h2>
+            <div id="map"></div>
+        </div>
+    </div>
+    
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

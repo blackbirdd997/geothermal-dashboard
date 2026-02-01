@@ -70,3 +70,25 @@ h1 {
     font-size: 0.9rem;
     opacity: 0.8;
 }
+
+.chart-container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 2rem;
+    margin-top: 3rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.chart-container h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+}
+
+#map {
+    height: 500px;
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 1rem;
+}
